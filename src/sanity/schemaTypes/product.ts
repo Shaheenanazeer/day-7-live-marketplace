@@ -1,0 +1,58 @@
+
+import { defineType } from "sanity";
+
+export default defineType({
+  name: "product",
+  type: "document",
+  title: "Product",
+  fields: [
+    {
+      name: "name",
+      type: "string",
+      title: "Name",
+    },
+    {
+      name: "image",
+      type: "image",
+      title: "Image",
+      options: {
+        hotspot: true,
+      },
+    },
+    {
+      name: "price",
+      type: "number",
+      title: "Price",
+    },
+    {
+      name: "description",
+      type: "text",
+      title: "Description",
+    },
+    {
+      name: "inventory",
+      type: "number",
+      title: "Inventory",
+    },
+    {
+      name: "discountPercentage",
+      type: "number",
+      title: "Discount Percentage",
+    },
+    {
+      name: "isFeaturedProduct",
+      type: "boolean",
+      title: "Featured Product",
+    },
+    {
+      name: "stockLevel",
+      type: "number",
+      title: "Stock Level",
+    },
+    {
+      name: "category",
+      type: "string",
+      title: "Category",
+    },
+  ],
+});
